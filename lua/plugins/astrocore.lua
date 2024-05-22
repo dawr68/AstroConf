@@ -18,11 +18,15 @@ return {
     mappings = {
       -- first key is the mode
       i = {
-        ["<Tab><Tab>"] = {
+        ["<C-l>"] = {
           'copilot#Accept("")',
           expr = true,
           replace_keycodes = false,
           desc = "Copilot accept suggestion",
+        },
+        ["<C-y>"] = {
+          "<plug>(copilot-accept-word)",
+          desc = "Copilot accept word",
         },
       },
     },
