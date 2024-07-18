@@ -10,6 +10,16 @@ require("lazy").setup({
       pin_plugins = nil, -- Default will pin plugins when tracking `version` of AstroNvim, set to true/false to override
     },
   },
+  {
+    "amitds1997/remote-nvim.nvim",
+    version = "*",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    config = true,
+  },
   { import = "community" },
   { import = "plugins" },
   { "github/copilot.vim" },
