@@ -10,7 +10,7 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "ruff",
-        "pyright",
+        "basedpyright",
         "clangd",
         "ruff_lsp",
         -- add more arguments for adding more language servers
@@ -25,7 +25,7 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "ruff",
-        "clang_format",
+        "clang-format",
         "cmakelint",
         "cpplint",
         -- add more arguments for adding more null-ls sources
@@ -38,8 +38,7 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "ruff",
-        "clang_format",
+        "debugpy",
         -- add more arguments for adding more debuggers
       })
     end,
