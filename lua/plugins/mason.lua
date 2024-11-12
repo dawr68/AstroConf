@@ -12,7 +12,6 @@ return {
         "ruff",
         "basedpyright",
         "clangd",
-        "ruff_lsp",
         -- add more arguments for adding more language servers
       })
     end,
